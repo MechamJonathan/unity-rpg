@@ -2,10 +2,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public string playerName;
+    public int age = 25;
+    public float moveSpeed = 2.5f;
+    public bool gameOver = false;
 
-    void Update()
+
+    private void Start()
     {
-        rb.linearVelocity = new Vector2(Input.GetAxis("Horizontal"), rb.linearVelocityY);
+        playerName = "Bob";
+
+        Debug.Log(playerName + " - started the game");
     }
 }
