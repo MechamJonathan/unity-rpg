@@ -35,6 +35,5 @@ public class Player : MonoBehaviour
     private void TakeDamage(int damage)
     {
         currentHp -= damage;
-        Debug.Log("Player health: " + currentHp);
     }
 }
