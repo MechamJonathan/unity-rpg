@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public StateMachine stateMachine { get; private set; }
+    private StateMachine stateMachine;
     private EntityState idleState;
 
     private void Awake()
