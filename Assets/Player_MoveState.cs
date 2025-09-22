@@ -13,7 +13,6 @@ public class Player_MoveState : EntityState
         if (player.moveInput.x == 0)
             stateMachine.ChangeState(player.idleState);
 
-        player.SetVelocity(player.moveInput.x * player.moveSpeed, player.rb.linearVelocity.y);
+        player.SetVelocity(player.moveInput.x * player.moveSpeed, rb.linearVelocity.y);
     }
-
 }
