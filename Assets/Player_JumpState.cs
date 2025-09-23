@@ -19,6 +19,5 @@ public class Player_JumpState : EntityState
 
         if (rb.linearVelocity.y < 0)
             stateMachine.ChangeState(player.fallState);
-
     }
 }
