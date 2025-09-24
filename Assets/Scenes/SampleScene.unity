@@ -130,8 +130,8 @@ GameObject:
   - component: {fileID: 82994712}
   - component: {fileID: 82994711}
   - component: {fileID: 82994710}
-  m_Layer: 0
-  m_Name: Square
+  m_Layer: 6
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,6 +285,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  jumpForce: 5
+  inAirMoveMultiplier: 0.65
+  groundCheckDitance: 1.4
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundDetected: 0
 --- !u!4 &207112706
 Transform:
   m_ObjectHideFlags: 0
@@ -362,8 +369,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.04785037, y: -0.2701664}
-  m_Size: {x: 0.7871022, y: 2.050737}
+  m_Offset: {x: 0, y: -0.285}
+  m_Size: {x: 0.77, y: 2.09}
   m_Direction: 0
 --- !u!1 &519420028
 GameObject:
