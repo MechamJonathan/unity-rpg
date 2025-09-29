@@ -15,6 +15,5 @@ public class Player_GroundedState : EntityState
 
         if (input.Player.Jump.WasPerformedThisFrame())
                 stateMachine.ChangeState(player.jumpState);
-
     }
 }
