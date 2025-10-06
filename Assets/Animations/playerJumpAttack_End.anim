@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playerBasicAttack_3
+  m_Name: playerJumpAttack_End
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,22 +21,18 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1070237350, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.071428575
-      value: {fileID: -1068982543, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.14285715
       value: {fileID: -950186352, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.21428572
+    - time: 0
       value: {fileID: -1533746133, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.2857143
+    - time: 0.071428575
       value: {fileID: 143844991, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.35714287
+    - time: 0.14285715
       value: {fileID: -1787021065, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.42857143
+    - time: 0.21428572
       value: {fileID: 1859486014, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.5
+    - time: 0.2857143
       value: {fileID: 1859486014, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - time: 0.5714286
+    - time: 0.35714287
       value: {fileID: 1859486014, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
     attribute: m_Sprite
     path: 
@@ -60,8 +56,6 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1070237350, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
-    - {fileID: -1068982543, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
     - {fileID: -950186352, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
     - {fileID: -1533746133, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
     - {fileID: 143844991, guid: 60b1e190284c2415dbdba703abc13b70, type: 3}
@@ -74,7 +68,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6428572
+    m_StopTime: 0.42857143
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -94,7 +88,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5714286
+  - time: 0.35714287
     functionName: CurrentStateTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
