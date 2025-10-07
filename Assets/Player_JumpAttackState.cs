@@ -13,6 +13,8 @@ public class Player_JumpAttackState : EntityState
     {
         base.Enter();
         touchedGround = false;
+
+        player.SetVelocity(player.jumpAttackVelocity.x * player.facingDir, player.jumpAttackVelocity.y);
     }
 
     public override void Update()
@@ -24,9 +26,9 @@ public class Player_JumpAttackState : EntityState
             touchedGround = true;
             anim.SetTrigger("jumpAttackTrigger");
             player.SetVelocity(0, rb.linearVelocity.y);
-
-            if (triggerCalled && player.groundDetected)
-                stateMachine.ChangeState(player.idleState);
         }
+
+        if (triggerCalled && player.groundDetected)
+            stateMachine.ChangeState(player.idleState);
     }
 }
