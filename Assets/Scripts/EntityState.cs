@@ -9,7 +9,6 @@ public abstract class EntityState
     protected float stateTimer;
     protected bool triggerCalled;
 
-
     public EntityState(StateMachine stateMachine, string animBoolName)
     {
         this.stateMachine = stateMachine;
