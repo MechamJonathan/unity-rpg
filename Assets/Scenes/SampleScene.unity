@@ -1020,15 +1020,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheckDitance: 0.5
-  wallCheckDistance: 0
+  wallCheckDistance: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   groundCheck: {fileID: 708354798}
   primaryWallCheck: {fileID: 979515657}
-  secondaryWallCheck: {fileID: 979515657}
+  secondaryWallCheck: {fileID: 0}
   idleTime: 2
   moveSpeed: 1.4
+  moveAnimSpeedMultiplier: 1
 --- !u!4 &979515657
 Transform:
   m_ObjectHideFlags: 0
@@ -1038,7 +1039,7 @@ Transform:
   m_GameObject: {fileID: 979515655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.95, y: 0.45, z: 0}
+  m_LocalPosition: {x: -3.66, y: 0.6, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
