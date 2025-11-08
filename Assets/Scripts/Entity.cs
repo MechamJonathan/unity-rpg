@@ -6,7 +6,6 @@ public class Entity : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     protected StateMachine stateMachine;
 
-
     private bool facingRight = true;
     public int facingDir { get; private set; } = 1;
 
