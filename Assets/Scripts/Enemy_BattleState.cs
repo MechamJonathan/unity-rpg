@@ -19,6 +19,9 @@ public class Enemy_BattleState : EnemyState
     {
         base.Update();
 
+        if (enemy.PlayerDetection() == true)
+            enemy.lastTimeWasInBattle = Time.time;
+
         if (WithinAttackRange())
             stateMachine.ChangeState(enemy.attackState);
         else
