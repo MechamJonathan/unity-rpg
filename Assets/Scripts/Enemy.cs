@@ -11,9 +11,6 @@ public class Enemy : Entity
     public float battleMoveSpeed = 3;
     public float attackDistance = 2;
     public float battleTimeDuration = 5;
-    public float lastTimeWasInBattle;
-    public float inGameTime;
-
 
     [Header("Movement Details")]
     public float idleTime = 2;
@@ -26,12 +23,6 @@ public class Enemy : Entity
     [SerializeField] private Transform playerCheck;
     [SerializeField] private float playerCheckDistance = 10;
 
-    protected override void Update()
-    {
-        base.Update();
-
-        inGameTime = Time.time;
-    }
     public RaycastHit2D PlayerDetection()
     {
         RaycastHit2D hit = Physics2D.Raycast(playerCheck.position, Vector2.right * facingDir, playerCheckDistance, whatIsPlayer | whatIsGround);

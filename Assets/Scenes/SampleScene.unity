@@ -1029,6 +1029,9 @@ MonoBehaviour:
   secondaryWallCheck: {fileID: 0}
   battleMoveSpeed: 3
   attackDistance: 2
+  battleTimeDuration: 5
+  lastTimeWasInBattle: 0
+  inGameTime: 0
   idleTime: 2
   moveSpeed: 1.4
   moveAnimSpeedMultiplier: 1
