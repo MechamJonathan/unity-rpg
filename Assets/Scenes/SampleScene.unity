@@ -1030,8 +1030,8 @@ MonoBehaviour:
   battleMoveSpeed: 3
   attackDistance: 2
   battleTimeDuration: 5
-  lastTimeWasInBattle: 0
-  inGameTime: 0
+  minRetreatDistance: 1
+  retreatVelocity: {x: 0, y: 0}
   idleTime: 2
   moveSpeed: 1.4
   moveAnimSpeedMultiplier: 1

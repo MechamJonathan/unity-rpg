@@ -6,7 +6,7 @@ public class Entity_AnimationTriggers : MonoBehaviour
 
     private void Awake()
     {
-        entity = GetComponentInParent<Player>();
+        entity = GetComponentInParent<Entity>();
     }
 
     private void CurrentStateTrigger()

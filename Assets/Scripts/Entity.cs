@@ -51,7 +51,7 @@ public class Entity : MonoBehaviour
         HandleFlip(xVelocity);
     }
 
-    private void HandleFlip(float xVelocity)
+    public void HandleFlip(float xVelocity)
     {
         if (xVelocity > 0 && facingRight == false)
             Flip();
@@ -63,7 +63,7 @@ public class Entity : MonoBehaviour
     {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
-        facingDir *= -1;
+        facingDir = facingDir * -1;
     }
 
     private void HandleCollisionDetection()

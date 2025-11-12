@@ -14,20 +14,27 @@ public class Enemy_BattleState : EnemyState
         base.Enter();
 
         if (player == null)
-            player = enemy.PlayerDetection().transform;
+            player = enemy.PlayerDetected().transform;
+
+        if (ShouldRetreat())
+        {
+            Debug.Log("I should be retreating!!!!");
+            rb.linearVelocity = new Vector2(enemy.retreatVelocity.x * -DirectionToPlayer(), enemy.retreatVelocity.y);
+            enemy.HandleFlip(DirectionToPlayer());
+        }
     }
 
     public override void Update()
     {
         base.Update();
 
-        if (enemy.PlayerDetection() == true)
+        if (enemy.PlayerDetected())
             UpdateBattleTimer();
 
         if (BattleTimeIsOver())
             stateMachine.ChangeState(enemy.idleState);
 
-        if (WithinAttackRange())
+        if (WithinAttackRange() && enemy.PlayerDetected())
             stateMachine.ChangeState(enemy.attackState);
         else
             enemy.SetVelocity(enemy.battleMoveSpeed * DirectionToPlayer(), rb.linearVelocity.y);
@@ -37,6 +44,7 @@ public class Enemy_BattleState : EnemyState
 
     private bool BattleTimeIsOver() => Time.time > lastTimeWasInBattle + enemy.battleTimeDuration;
     private bool WithinAttackRange() => DistanceToPlayer() < enemy.attackDistance;
+    private bool ShouldRetreat() => DistanceToPlayer() < enemy.minRetreatDistance;
 
     private float DistanceToPlayer()
     {
