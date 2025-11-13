@@ -18,7 +18,6 @@ public class Enemy_BattleState : EnemyState
 
         if (ShouldRetreat())
         {
-            Debug.Log("I should be retreating!!!!");
             rb.linearVelocity = new Vector2(enemy.retreatVelocity.x * -DirectionToPlayer(), enemy.retreatVelocity.y);
             enemy.HandleFlip(DirectionToPlayer());
         }

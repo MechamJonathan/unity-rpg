@@ -1031,7 +1031,7 @@ MonoBehaviour:
   attackDistance: 2
   battleTimeDuration: 5
   minRetreatDistance: 1
-  retreatVelocity: {x: 0, y: 0}
+  retreatVelocity: {x: 5, y: 3}
   idleTime: 2
   moveSpeed: 1.4
   moveAnimSpeedMultiplier: 1
