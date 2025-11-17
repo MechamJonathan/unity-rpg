@@ -39,7 +39,6 @@ public class Entity : MonoBehaviour
         stateMachine.UpdateActiveState();
     }
 
-
     public void CurrentStateAnimationTrigger()
     {
         stateMachine.currentState.AnimationTrigger();
