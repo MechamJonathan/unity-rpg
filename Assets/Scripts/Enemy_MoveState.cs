@@ -13,7 +13,6 @@ public class Enemy_MoveState : Enemy_GroundedState
         if (enemy.groundDetected == false || enemy.wallDetected)
             enemy.Flip();
     }
-
     public override void Update()
     {
         base.Update();
