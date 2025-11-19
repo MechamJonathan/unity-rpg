@@ -33,7 +33,6 @@ public class Enemy : Entity
         {
             return default;
         }
-
         return hit;
     }
 
@@ -47,7 +46,5 @@ public class Enemy : Entity
         Gizmos.DrawLine(playerCheck.position, new Vector3(playerCheck.position.x + (facingDir * attackDistance), playerCheck.position.y));
         Gizmos.color = Color.green;
         Gizmos.DrawLine(playerCheck.position, new Vector3(playerCheck.position.x + (facingDir * minRetreatDistance), playerCheck.position.y));
-
     }
-
 }
